@@ -1,0 +1,101 @@
+:root {
+  --mod-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+  --white: #ffffff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Commissioner", sans-serif;
+}
+
+/* General Styles */
+header {
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+h2 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+
+button {
+  background-color: var(--mod-cyan);
+  color: var(--white);
+  border: none;
+  border-radius: 35px;
+  padding: 20px 35px;
+}
+
+/* Classes */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.fix-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: auto;
+  z-index: -3;
+}
+
+.flex-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hide {
+  display: none;
+}
+.box {
+  padding: 25px 20px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.logo-mastercraft {
+  position: relative;
+  top: 26px;
+}
+.bottom-border {
+  margin-top: -15px;
+  line-height: 2;
+}
+
+/* Utilities */
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* Text Styles */
+.text-center {
+  text-align: center;
+}
+.large-bold-text {
+  font-size: 32px;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 0;
+  margin-bottom: 28px;
+}
+.text-left {
+  text-align: left;
+}
