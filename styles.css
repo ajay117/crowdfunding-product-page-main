@@ -32,6 +32,26 @@ h2 {
 h4 {
   font-size: 18px;
 }
+h6 {
+  font-size: 15px;
+  margin: 0;
+  line-height: 0.1;
+}
+input[type="radio"] {
+  margin-right: 15px;
+  transform: scale(1.8);
+}
+input[type="number"] {
+  width: 100px;
+  padding: 0 0 0 35px;
+  border-radius: 25px;
+  outline: none;
+  border-color: hsla(0, 0%, 48%, 0.6);
+  border-style: solid;
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 button {
   background-color: var(--mod-cyan);
@@ -39,6 +59,7 @@ button {
   border: none;
   border-radius: 35px;
   padding: 20px 35px;
+  outline: none;
 }
 
 /* Classes */
@@ -55,11 +76,19 @@ button {
   max-height: auto;
   z-index: -3;
 }
-
 .flex-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.align-center {
+  align-items: center;
 }
 .hide {
   display: none;
@@ -79,17 +108,48 @@ button {
   margin-top: -15px;
   line-height: 2;
 }
-
+.gray-border {
+  border: 1px solid hsla(0, 0%, 48%, 0.5);
+}
+.vertically-center {
+  position: relative;
+  top: -5px;
+  padding-left: 8px;
+}
+.relative-pos {
+  position: relative;
+}
+.move {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  color: var(--dark-gray);
+}
 /* Utilities */
 .mt-20 {
   margin-top: 20px;
 }
-
+.mt-35 {
+  margin-top: 35px;
+}
+.mt {
+  margin-top: 15px;
+}
+.mb-35 {
+  margin-bottom: 35px;
+}
 /* Text Styles */
 .text-center {
   text-align: center;
 }
-.large-bold-text {
+.regular-text {
+  font-size: 18px;
+}
+.black-text {
+  color: black;
+  margin-right: 5px;
+}
+.text-large {
   font-size: 32px;
   color: var(--black);
   font-weight: 700;
@@ -98,4 +158,11 @@ button {
 }
 .text-left {
   text-align: left;
+}
+.blue-text {
+  color: var(--mod-cyan);
+  font-weight: 700;
+}
+.light-opacity {
+  opacity: 0.5;
 }
