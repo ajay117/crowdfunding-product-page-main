@@ -125,6 +125,23 @@ button {
   left: 25px;
   color: var(--dark-gray);
 }
+.parent-border {
+  border: 2px solid var(--mod-cyan);
+  border-bottom: 1px solid hsla(0, 0%, 48%, 0.3);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.child-border {
+  padding-top: 5px;
+  border: 2px solid var(--mod-cyan);
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: none;
+}
+
 /* Utilities */
 .mt-20 {
   margin-top: 20px;
